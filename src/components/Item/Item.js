@@ -1,0 +1,13 @@
+import { card } from "./Item.module.scss";
+
+const Item = ({ product }) => {
+  return (
+    <div className={card}>
+      <h3>{product.name}</h3>
+      <p>Precio: {product.price}</p>
+      <p>Stock: {product.stock}</p>
+    </div>
+  );
+};
+
+export default Item;
